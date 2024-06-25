@@ -16,14 +16,8 @@
 		81724B3D2C29AF6A00DEB8A4 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81724B3C2C29AF6A00DEB8A4 /* Crypto.swift */; };
 		81724B3F2C29B49900DEB8A4 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81724B3E2C29B49900DEB8A4 /* WebService.swift */; };
 		81724B412C29ECC500DEB8A4 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81724B402C29ECC500DEB8A4 /* CryptoViewModel.swift */; };
-		81724B442C29EEFE00DEB8A4 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B432C29EEFE00DEB8A4 /* RxBlocking */; };
-		81724B462C29EEFE00DEB8A4 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B452C29EEFE00DEB8A4 /* RxBlocking-Dynamic */; };
 		81724B482C29EEFE00DEB8A4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B472C29EEFE00DEB8A4 /* RxCocoa */; };
-		81724B4A2C29EEFE00DEB8A4 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B492C29EEFE00DEB8A4 /* RxCocoa-Dynamic */; };
 		81724B4C2C29EEFE00DEB8A4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B4B2C29EEFE00DEB8A4 /* RxSwift */; };
-		81724B4E2C29EEFE00DEB8A4 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B4D2C29EEFE00DEB8A4 /* RxSwift-Dynamic */; };
-		81724B502C29EEFE00DEB8A4 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B4F2C29EEFE00DEB8A4 /* RxTest */; };
-		81724B522C29EEFE00DEB8A4 /* RxTest-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 81724B512C29EEFE00DEB8A4 /* RxTest-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,14 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81724B502C29EEFE00DEB8A4 /* RxTest in Frameworks */,
-				81724B4A2C29EEFE00DEB8A4 /* RxCocoa-Dynamic in Frameworks */,
-				81724B522C29EEFE00DEB8A4 /* RxTest-Dynamic in Frameworks */,
 				81724B482C29EEFE00DEB8A4 /* RxCocoa in Frameworks */,
 				81724B4C2C29EEFE00DEB8A4 /* RxSwift in Frameworks */,
-				81724B442C29EEFE00DEB8A4 /* RxBlocking in Frameworks */,
-				81724B4E2C29EEFE00DEB8A4 /* RxSwift-Dynamic in Frameworks */,
-				81724B462C29EEFE00DEB8A4 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,14 +129,8 @@
 			);
 			name = CryptoCrazyRxMVVM;
 			packageProductDependencies = (
-				81724B432C29EEFE00DEB8A4 /* RxBlocking */,
-				81724B452C29EEFE00DEB8A4 /* RxBlocking-Dynamic */,
 				81724B472C29EEFE00DEB8A4 /* RxCocoa */,
-				81724B492C29EEFE00DEB8A4 /* RxCocoa-Dynamic */,
 				81724B4B2C29EEFE00DEB8A4 /* RxSwift */,
-				81724B4D2C29EEFE00DEB8A4 /* RxSwift-Dynamic */,
-				81724B4F2C29EEFE00DEB8A4 /* RxTest */,
-				81724B512C29EEFE00DEB8A4 /* RxTest-Dynamic */,
 			);
 			productName = CryptoCrazyRxMVVM;
 			productReference = 814A9BEC2C29A0500074A937 /* CryptoCrazyRxMVVM.app */;
@@ -449,45 +431,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		81724B432C29EEFE00DEB8A4 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		81724B452C29EEFE00DEB8A4 /* RxBlocking-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxBlocking-Dynamic";
-		};
 		81724B472C29EEFE00DEB8A4 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		81724B492C29EEFE00DEB8A4 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
-		};
 		81724B4B2C29EEFE00DEB8A4 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		81724B4D2C29EEFE00DEB8A4 /* RxSwift-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxSwift-Dynamic";
-		};
-		81724B4F2C29EEFE00DEB8A4 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-		81724B512C29EEFE00DEB8A4 /* RxTest-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81724B422C29EEFE00DEB8A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxTest-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
