@@ -17,19 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
-        
-        WebService().downloadCurrencies(url: url) { result in
-            switch result {
-            case .success(let cryptos):
-                self.cryptoList = cryptos
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
+       cryptoVi
         
         
     }
