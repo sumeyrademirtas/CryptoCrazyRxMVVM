@@ -12,6 +12,8 @@ import RxCocoa
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
+    
     let cryptoVM = CryptoViewModel()
     let disposeBag = DisposeBag()
     
@@ -32,6 +34,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     private func setupBindings() {
+        
+        cryptoVM
+            .loading
+            .bind(to: self.indicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
         
         cryptoVM
             .error
